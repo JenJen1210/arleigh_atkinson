@@ -1,5 +1,32 @@
-<h1>Work History</h1>
-<h3>Head of Auror Office</h3>
+<style>
+
+body {
+  background-image: url(http://www.proselyte-graphics.com/Content/Worship-Backgrounds/Paper-Proselyte-Graphics.jpg);
+  background-size: cover;
+}
+
+.jobs {
+  display: inline-block;
+  margin: 0 1.5%;
+  width: 30%;
+}
+
+</style>
+
+<body>
+  <div>
+    <h1>Work History</h1>
+  </div>
+  <section class="jobs">
+    <% @jobs.each do |job| %>
+    <h2><%= job.employer %></h2>
+    <h3>Position: <%= job.position %></h3>
+    <p>Years Employed: <%= job.years_employed %></p>
+    <% end %>
+  </section>
+</body>
+
+<!-- <h3>Head of Auror Office</h3>
 <h4>Duties Include:</h4>
   <p>Being bad ass</p>
   <p>Telling people what to do</p>
@@ -10,4 +37,4 @@
   <p>Being the best</p>
 <h3>Michael Bluth</h3>
 <h4>Duties Included</h4>
-<p>Being Michael Bluth</p>
+<p>Being Michael Bluth</p> -->

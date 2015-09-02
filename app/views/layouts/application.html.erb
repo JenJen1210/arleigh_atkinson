@@ -1,11 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link href='https://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Libre+Baskerville' rel='stylesheet' type='text/css'>
   <title>Arleigh</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
+<style>
+
+h1 {
+  font-family: 'Rock Salt', 'comic sans'
+}
+
+h2, h3, h4, p {
+  font-family: 'Libre Baskerville'
+}
+
+</style>
 <body>
 <%= render partial: 'layouts/navbar' %>
 <%= yield %>

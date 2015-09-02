@@ -1,11 +1,19 @@
-<style>
+<h1>Education</h1>
+<% @education.each do |edu| %>
+<h2><%= edu.school %></h2>
+<p>Years Attended: <%= edu.years_attended %></p>
+<p>GPA: <%= edu.gpa %></p>
+<p>Graduated: <%= truthelizer(edu.graduated) %></p>
+<% end %>
+
+<!-- /*<style>
 img {
     width:540px;
     height: auto;
 }
-</style>
+</style>*/ -->
 
-<h1>Education</h1>
+<!-- <h1>Education</h1>
 <h2>Hogwarts</h2>
 <h3>School of Witchcraft and Wizardry</h3>
-<img src="http://img07.deviantart.net/368c/i/2011/197/1/a/ravenclaw_flag_by_kooro_sama-d3x5pj3.png">
+<img src="http://img07.deviantart.net/368c/i/2011/197/1/a/ravenclaw_flag_by_kooro_sama-d3x5pj3.png">*/ -->
